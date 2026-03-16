@@ -3,10 +3,10 @@ require File.expand_path('../boot', __FILE__)
 require "active_record/railtie"
 require "action_controller/railtie"
 require "action_mailer/railtie"
-#require "active_resource/railtie"
 require "sprockets/railtie"
-require 'google_places_autocomplete'
-require 'haml'
+#require "active_resource/railtie"
+# require 'google_places_autocomplete'
+# require 'haml'
 
 # Rails 4 Upgrade removes below code
 #if defined?(Bundler)
@@ -84,7 +84,7 @@ module Spokenvote
     # parameters by using an attr_accessible or attr_protected declaration.
 
     # Temp setting while transtioning to Rails 4
-    config.active_record.whitelist_attributes = false
+    # config.active_record.whitelist_attributes = false
     #config.action_controller.action_on_unpermitted_parameters = :raise
 
     # Enable the asset pipeline
